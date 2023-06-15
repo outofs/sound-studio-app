@@ -1,0 +1,55 @@
+.login {
+  background-color: black;
+  background-image: url("https://insider.dbsinstitute.ac.uk/hubfs/5%20of%20the%20Best%20Independent%20Recording%20Studios%20Calling%20Manchester%20Home%20featured%20image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login > h1 {
+  color: #fff;
+  /* padding-top: 2rem; */
+  width: 100%;
+  background-color: black;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid black;
+}
+
+.loginInput {
+  padding: 8px 20px;
+  border-radius: 2px;
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border: 1px solid #fff;
+}
+
+.loginButton {
+  background-color: transparent;
+  color: #ffff;
+  padding: 8px 20px;
+  border: 1px solid white;
+  transition: all 0.3s ease-out;
+  font-size: 20px;
+}
+
+.loginButton:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #242424;
+  transition: all 0.3s ease-out;
+}
+
+.error {
+  color: red;
+  padding: 1rem;
+}

@@ -1,0 +1,122 @@
+:root {
+  --overlay--color: 0, 0, 0;
+  --bg--color: #000000;
+  --black--var--gradient: 0, 0, 0;
+}
+
+.service {
+  color: white;
+  background-color: #000000;
+}
+
+.banner {
+  height: 50vh;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--overlay--color), 0.6);
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(
+    to top,
+    var(--bg--color),
+    rgba(var(--black--var--gradient), 0)
+  );
+}
+
+.service-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -200px;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.service-content__poster {
+  flex: 1;
+}
+
+.service-content__poster__img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  padding-top: 165%;
+}
+
+.service-content__info {
+  width: 70%;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.service-content__info > * {
+  margin-bottom: 2rem;
+}
+
+.service-content__info > .title {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.service-content__info > .link {
+  border: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 0.5rem 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: 0px 0px 7px 8px #ff00004d;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.video {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.video__title {
+  padding: 1rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .service-content__poster {
+    display: none;
+  }
+
+  .service-content__info {
+    width: 100%;
+    padding-left: 0;
+  }
+}

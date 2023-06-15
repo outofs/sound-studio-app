@@ -1,0 +1,7 @@
+.cards {
+  background-image: url("../../../public/images/sound.png");
+}
+
+.cards > h1 {
+  color: white;
+}

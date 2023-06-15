@@ -1,0 +1,55 @@
+.contact {
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.contacts {
+  background-color: black;
+}
+
+.contact__main {
+  display: flex;
+  color: white;
+  padding: 2rem 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__main > h1 {
+  text-align: center;
+}
+
+.section__subtitle {
+  text-align: center;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1120px;
+  padding-top: 2rem;
+}
+
+.contact__information {
+  display: flex;
+  padding-left: 2rem;
+}
+
+.contact__icon {
+  font-size: 2rem;
+  color: white;
+  margin-right: 0.75rem;
+}
+
+.contact__title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: white;
+}
+
+.contact__subtitle {
+  font-size: 0.875rem;
+  color: rgb(163, 163, 163);
+}
